@@ -7,6 +7,8 @@ body {
     background-color: #151515;
 }
 
+/* menu top bar */
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -48,3 +50,28 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
+/* video section */
+
+.video-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1.5rem 1.5rem;
+    width: 20%;
+    height: 20%
+
+}
+
+.thumbnail {
+    width: 60%;
+    height: 60%;
+}
+
+.details{
+    color: lightgrey;
+}
+
