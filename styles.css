@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #151515;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5%;
+}
+
+.start {
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburger-menu {
+    height: 50px;
+    width: 50px;
+}
+
+.yt-logo {
+    height: 50%;
+    width: 50%;
+}
+
+.search-bar {
+    background-color: #151515;
+}
+
+#search {
+    background-color: transparent;
+    color: white;
+}
+
+#avatar {
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
