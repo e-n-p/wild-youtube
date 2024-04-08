@@ -63,15 +63,18 @@ img {
     margin: 1.5rem 1.5rem;
     width: 20%;
     height: 20%
-
 }
 
 .thumbnail {
-    width: 60%;
-    height: 60%;
+    width: 90%;
+    height: 90%;
 }
 
-.details{
+.details {
     color: lightgrey;
+    text-align: left;
 }
 
+.details p {
+    margin: 0.2rem 1rem 0.2rem 1rem;
+}
