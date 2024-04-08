@@ -6,7 +6,8 @@ function fetchVideoData() {
             return response.json();
         })
         .then((videoData) => {
-            CreateVideoCardContainer(videoData.Videos)
+            CreateVideoCardContainer(videoData.Videos);
+            CreateVideoCardContainer(videoData.Videos); //just for testing
         })
 };
 
@@ -36,7 +37,7 @@ function filterSearch() {
     const videoContainer = document.getElementsByClassName('card');
     for (let card of videoContainer) {
         console.log(card);
-        let cardText =card.innerText.toLowerCase();
+        let cardText = card.innerText.toLowerCase();
         if (!cardText.includes(searchTerm)){
             card.style.display = 'none';
         } else {

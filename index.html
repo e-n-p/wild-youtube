@@ -6,32 +6,44 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="assets/favicon_32x32.png" type="image/x-icon">
     <script src="script.js"></script>
-    <title>##Youtube</title>
+    <title>Youtube</title>
 </head>
 <body onload="fetchVideoData()">
-    <div class="top-bar">
-        <div class="start">
-            <div class="hamburger-menu">
-                <img src="assets/hamburger-menu.jpg">
+    <div class="fix-bar">
+        <div class="top-bar">
+            <div class="start">
+                <div class="hamburger-menu">
+                    <img src="assets/hamburger-menu.jpg">
+                </div>
+                <div class="yt-logo">
+                    <a href="/"><img src="assets/logo.png" alt="Youtube"></a>
+                </div>
             </div>
-            <div class="yt-logo">
-                <a href="/"><img src="assets/logo.png" alt="Youtube"></a>
+            <div class="center">
+                <div class="search-bar">
+                    <form>
+                        <input id="search" onkeyup="filterSearch()" type="text" placeholder="Search.." name="search">
+                        <button type="submit" onclick="filterSearch()">Search</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="center">
-            <div class="search-bar">
-                <form>
-                    <input id="search" onkeyup="filterSearch()" type="text" placeholder="Search.." name="search">
-                    <button type="submit" onclick="filterSearch()">Search</button>
-                </form>
-            </div>
-        </div>
-        <div class="end">
-            <div class="user-icon">
-                <img id="avatar" src="assets/user_icon.jpg" alt="User icon">
+            <div class="end">
+                <div class="user-icon">
+                    <img id="avatar" src="assets/user_icon.jpg" alt="User icon">
+                </div>
             </div>
         </div>
     </div>
-    <div class="video-section"></div>
+    <div class="content">
+        <div class="menu-column">
+            <div class="items">
+                <a href="/"><img src="assets/home.png"></a>
+                <a href="/"><img src="assets/shorts.png"></a>
+                <a href="/"><img src="assets/subscriptions.png"></a>
+                <a href="/"><img src="assets/you.png"></a>
+            </div>
+        </div>
+        <div class="video-section"></div>
+    </div>
 </body>
 </html>
